@@ -1,74 +1,8 @@
-server:
-    
-  #port: 8001 #DEV
-  port: 8202 #UAT  #7202 previous
-  #port: 8119 #PROD
-  tomcat:
-   max-threads: 0
-   acceptCount: 10000
-   max-connections: 10000
-  
-eureka:
-  client:
-    service-url:
-       ##FOR DEV
-       ##OLDdefaultZone: http://10.14.0.34:3011/eureka/
-       #defaultZone: http://dev-api.tradebulls.in:3011/eureka/
-       ##FOR UAT
-       #defaultZone: http://172.20.0.24:8081/eureka/
-       defaultZone: http://uat-eureka.tradebulls.in:8081/eureka
-       ##FOR PROD
-       ##defaultZone: http://172.30.0.25:8081/eureka/
-       #defaultZone: http://prod-eureka.tradebulls.in:8081/eureka
-  instance:
-    prefer-ip-address: true
-    
-spring:
-  application:
-    name: ms-aop-scrutiny
-
-environment:
-  env: uat
-  docpath: \\10.24.0.54\documents\
-  
-#  env: prod  
-#  docpath: \\10.34.0.66\documents\
-  
-  
-  
-            
-ribbon:
-  eureka:
-    enabled: true
-  restclient:
-    enabled: true
-  http:
-    client:
-      enabled: true
-  ReadTimeout: 120000
-  ConnectTimeout: 120000
-        
-          
-hystrix:
-  command:
-    default:
-      execution:
-        timeout:
-          enabled: false
-          
-       
-zuul:
-  ribbon-isolation-strategy: THREAD
-
-     
-feign:
-  hystrix:
-    enabled: true         
 
  # Config
 
 app:
- name :  My app general config on GIT
+ name :  My app general config on GIT repo
  discription :  Welcome to ${app.name}
 
 # Various @value uses like List and Map
