@@ -25,7 +25,7 @@ eureka:
     
 spring:
   application:
-    name: ms-aop-scrutiny-process-sanket
+    name: ms-aop-scrutiny
 
 environment:
   env: uat
@@ -68,13 +68,13 @@ feign:
  # Config
 
 app:
- name :  My app on GIT
+ name :  My app general config on GIT
  discription :  Welcome to ${app.name}
 
 # Various @value uses like List and Map
 
 my:
- greeting :  Hello World from GIT Repo
+ greeting :  Hello World from general config GIT Repo
  list:
   values: One,Two,Three
  name :  sanket
