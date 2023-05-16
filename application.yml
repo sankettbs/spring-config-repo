@@ -23,4 +23,4 @@ db:
 # http://localhost:8080/actuator/configprops
 management.endpoints.web.exposure.include: "*"
 
-spring.cloud.config.uri: http://localhost:8888
+spring.cloud.config.uri: http://localhost:8001
