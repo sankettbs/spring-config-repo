@@ -3,6 +3,11 @@
 spring:
  application:
   name : ms-greeting-service
+ cloud:
+  config:
+   uri: http://localhost:8001
+ config:
+  import: configserver:http://localhost:8001
 
 app:
  name :  My app from ms-greeting-service
