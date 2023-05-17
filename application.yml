@@ -1,9 +1,9 @@
 
  # Config
 
-app:
- name :  My app general config on GIT repo
- discription :  Welcome to ${app.name}
+# app:
+#  name :  My app general config on GIT repo
+#  discription :  Welcome to ${app.name}
 
 # Various @value uses like List and Map
 
