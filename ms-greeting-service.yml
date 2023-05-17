@@ -1,5 +1,8 @@
 
  # Config
+spring:
+ application:
+  name : ms-greeting-service
 
 app:
  name :  My app from ms-greeting-service
