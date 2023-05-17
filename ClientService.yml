@@ -1,11 +1,9 @@
 spring:
   cloud:
     config:
-      uri:
-      - http://localhost:8001
+      uri: http://localhost:8001
   config:
-    import:
-    - configserver:http://localhost:8001
+    import: configserver:http://localhost:8001
   application:
     name: ClientService
 
